@@ -1,0 +1,22 @@
+//module.exports = {
+//  apps : [
+//    {
+//      name: "myapp",
+//      script: "./app.js",
+//      watch: true,
+//      env: {
+//        "NODE_ENV": "development",
+//      }
+//    }
+//  ]
+//}
+{
+  "apps" : [{
+    "name"        : "server",
+    "script"      : "../server/src/server.js",
+    "watch"       : true,
+    "env": {
+      "NODE_ENV": "test"
+    }
+  }]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "simple-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightwatch.conf.js",
+  "scripts": {
+    "e2e-test": "nightwatch",
+    "e2e-test:chrome": "node ../server/script/test.js | npm run e2e-test -- --env chrome",
+    "test": "sequelize db:migrate --env=test && sequelize db:seed:undo:all --env=test && sequelize db:seed:all  --env=test && npm run server:start && npm run e2e-test -- --env chrome && npm run server:stop",
+    "server:start": "pm2 start ecosystem.json",
+    "server:stop": "pm2 stop ecosystem.json",
+    "e2e-test:firefox": "npm run e2e-test -- --env firefox",
+    "debug": "node ../server/src/server.js --inspect-brk node_modules/.bin/nightwatch --env chrome"
+  },
+  "author": "Igor Mucsicska <mucsi_96@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chromedriver": "^2.32.3",
+    "cucumber": "^3.0.3",
+    "cucumber-pretty": "^0.0.5",
+    "geckodriver": "^1.10.0",
+    "mysql2": "^1.5.2",
+    "nightwatch": "^0.9.16",
+    "nightwatch-cucumber": "^8.2.9",
+    "phantomjs-prebuilt": "^2.1.16",
+    "selenium-server": "^3.7.1",
+    "sequelize": "^4.33.1",
+    "shelljs": "^0.8.1"
+  }
+}

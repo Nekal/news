@@ -1,0 +1,518 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Auth",
+    "line": 1,
+    "id": "auth",
+    "tags": [],
+    "uri": "features/auth.feature",
+    "elements": [
+      {
+        "id": "auth;the-user-is-authorized",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "The user is authorized",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open the \"Login\" page",
+            "match": {
+              "location": "step_definitions/my_steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5064
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see the \"Authorization form\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I enter \"admin\" in the field for \"username\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I enter \"12345\" in the field for \"password\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I click the \"login button\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I am authorized",
+            "match": {
+              "location": "step_definitions/my_steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 580
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "News",
+    "line": 2,
+    "id": "news",
+    "tags": [
+      {
+        "name": "@Login",
+        "line": 1
+      }
+    ],
+    "uri": "features/news.feature",
+    "elements": [
+      {
+        "id": "news;create-news",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Create news",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "hooks/test.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"Create News\" page",
+            "match": {
+              "location": "step_definitions/my_steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should see the \"News Creating forms\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I enter \"123\" in the field for \"title\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter \"321\" in the field for \"content\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the \"create button\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see the \"News list\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 579
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I see the news with the title: \"123\" and content: \"321\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87
+            }
+          }
+        ]
+      },
+      {
+        "id": "news;delete-news",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Delete news",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "hooks/test.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open the \"Home\" page",
+            "match": {
+              "location": "step_definitions/my_steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see the \"News list\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click the \"last news\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see the \"News detail\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I click the \"delete button\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see the \"News list\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 604
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I don't see the news with the title: \"123\" and content: \"321\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121
+            }
+          }
+        ]
+      },
+      {
+        "id": "news;edit-news",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Edit news",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "hooks/test.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I open the \"Home\" page",
+            "match": {
+              "location": "step_definitions/my_steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see the \"News list\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click the \"last news\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should see the \"News detail\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I click the \"edit button\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should see the \"News Editor forms\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I enter \"new123\" in the field for \"title\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I enter \"new321\" in the field for \"content\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I click the \"edit\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I should see the \"News list\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I see the news with the title: \"new123\" and content: \"new321\"",
+            "match": {
+              "location": "step_definitions/my_steps.js:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
