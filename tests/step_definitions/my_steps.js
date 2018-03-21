@@ -75,7 +75,7 @@ defineSupportCode(function ({And, But, Given, Then, When}) {
     client
       .waitForElementVisible('#animated', 1000)
       .expect
-      .element('#newsTitle').text.not.to.equal(title)
+      .element('#newsTitle').text.not.to.equal(title);
     client
       .waitForElementVisible('#animated', 1000)
       .expect
