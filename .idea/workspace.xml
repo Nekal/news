@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9718ab14-9c2b-472c-878a-1ed11ef46d26" name="Default" comment="update">
+    <list default="true" id="9718ab14-9c2b-472c-878a-1ed11ef46d26" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/node_modules/async-limiter/coverage/lcov-report/sort-arrow-sprite.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/node_modules/uws/build/Release/obj.target/action_after_build.stamp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/node_modules/uws/build/Release/obj.target/uws.node" />
@@ -26,10 +26,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/node_modules/uws/uws_linux_57.node" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/node_modules/uws/uws_win32_48.node" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/node_modules/uws/uws_win32_51.node" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/news.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/node_modules/after/.npmignore" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/node_modules/after/.travis.yml" />
@@ -415,6 +411,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/src/sockets/messages.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-news" afterPath="$PROJECT_DIR$/angular-news" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react_redux" afterPath="$PROJECT_DIR$/react_redux" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/package-lock.json" afterPath="$PROJECT_DIR$/server/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/package.json" afterPath="$PROJECT_DIR$/server/package.json" />
@@ -426,8 +423,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/routes/users.js" afterPath="$PROJECT_DIR$/server/src/routes/users.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/seeders/20180209114432-admin.js" afterPath="$PROJECT_DIR$/server/src/seeders/20180209114432-admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/server.js" afterPath="$PROJECT_DIR$/server/src/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/.idea/workspace.xml" afterPath="$PROJECT_DIR$/tests/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/step_definitions/my_steps.js" afterPath="$PROJECT_DIR$/tests/step_definitions/my_steps.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -723,12 +718,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521194555904</updated>
       <workItem from="1521194557097" duration="1591000" />
-      <workItem from="1521621798805" duration="11000" />
+      <workItem from="1521621798805" duration="185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1602000" />
+    <option name="totallyTimeSpent" value="1776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
